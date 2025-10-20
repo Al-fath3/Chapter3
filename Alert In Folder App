@@ -1,0 +1,25 @@
+import { Alert } from "@/component/alert";
+
+const TestAlert = () => {
+  return (
+    <div className="m-10">
+      <Alert type="info" title="Alert Info">
+        Ini adalah alert dengan tipe info
+      </Alert>
+
+      <Alert type="success" title="Alert Success">
+        Ini adalah alert dengan tipe success
+      </Alert>
+
+      <Alert type="warning" title="Alert Warning">
+        Ini adalah alert dengan tipe warning
+      </Alert>
+
+      <Alert type="danger" title="Alert Danger">
+        Ini adalah alert dengan tipe danger
+      </Alert>
+    </div>
+  );
+};
+
+export default TestAlert;
