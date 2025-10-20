@@ -1,0 +1,32 @@
+"use client"
+
+import { ButtonSucces, ButtonWarning, ButtonDanger, ButtonOnline, ButtonDangerOutline,ButtonOutline } from "@/component/button";
+
+
+const TestButton = () => {
+   return(
+       <div className="m-10">
+           <ButtonSucces type="button" onClick={() => alert("Success button clicked!")}>
+               Success Button
+           </ButtonSucces>
+           <ButtonWarning type="button" className="ml-2" onClick={() => alert("Warning button clicked!")}>
+               Warning Button
+           </ButtonWarning>
+           <ButtonDanger type="button" className="ml-2" onClick={() => alert("Danger button clicked!")}>
+               Danger Button
+           </ButtonDanger>
+           <ButtonOnline type="button" className="ml-2" onClick={() => alert("Online button clicked!")}>
+               OnlineButton
+           </ButtonOnline>
+           <ButtonDangerOutline type="button" className="ml-2" onClick={() => alert("Danger Outline button clicked!")}>
+               DangerOutlineButton
+           </ButtonDangerOutline>
+           <ButtonOutline type="button" className="ml-2" onClick={() => alert("Outline button clicked!")}>
+               OutlineButton
+           </ButtonOutline>
+       </div>
+   )
+}
+
+
+export default TestButton;
